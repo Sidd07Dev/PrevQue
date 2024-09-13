@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* General logo styling */
+.logo {
+    height: 40px; /* Set a default height for the logo */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Logo styling for the mobile view */
+  @media (max-width: 1024px) {
+    .mobile-logo {
+      height: 32px; /* Adjust the height for mobile view */
+      width: auto; /* Maintain aspect ratio */
+    }
+  }
+  
+  /* Ensure the logo fits within its container */
+  .navbar-container {
+    display: flex;
+    align-items: center; /* Vertically center the logo */
+  }
+  
+  .navbar-container img {
+    max-height: 100%; /* Ensure the logo doesn't overflow */
+  }
+  
